@@ -161,3 +161,341 @@
 2025-11-04 10:45:56.234 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-11-04 10:45:56.236 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1434763718 wrapping com.mysql.cj.jdbc.ConnectionImpl@6193f22] will not be managed by Spring
 2025-11-04 10:45:56.278 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@176e401b]
+2025-11-04 11:19:23.489 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:19:23.489 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1208c595] was not registered for synchronization because synchronization is not active
+2025-11-04 11:19:23.489 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@450927715 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a8356f6] will not be managed by Spring
+2025-11-04 11:19:23.496 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1208c595]
+2025-11-04 11:25:33.819 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 11:25:47.186 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 16068 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 11:25:47.189 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 11:25:47.190 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 11:25:48.446 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\BlindBoxMapper.class]
+2025-11-04 11:25:48.447 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 11:25:48.449 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blindBoxMapper' and 'com.example.amorproduct.mapper.BlindBoxMapper' mapperInterface
+2025-11-04 11:25:48.454 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'blindBoxMapper'.
+2025-11-04 11:25:48.455 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 11:25:48.456 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 11:25:49.139 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 11:25:49.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 11:25:49.158 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 11:25:49.159 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 11:25:49.254 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 11:25:49.254 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1992 ms
+2025-11-04 11:25:49.597 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\BlindBoxMapper.xml]'
+2025-11-04 11:25:49.632 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 11:25:50.106 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 11:25:50.134 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 11:25:50.144 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 3.936 seconds (process running for 5.297)
+2025-11-04 11:27:16.996 [http-nio-0.0.0.0-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 11:27:16.996 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 11:27:16.997 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-04 11:27:17.044 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:27:17.049 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@242c3b1a] was not registered for synchronization because synchronization is not active
+2025-11-04 11:27:17.059 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 11:27:17.258 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ac083
+2025-11-04 11:27:17.260 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 11:27:17.264 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2037058625 wrapping com.mysql.cj.jdbc.ConnectionImpl@7ac083] will not be managed by Spring
+2025-11-04 11:27:17.337 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@242c3b1a]
+2025-11-04 11:30:02.023 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:30:02.024 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ec0a0d6] was not registered for synchronization because synchronization is not active
+2025-11-04 11:30:02.024 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1132948132 wrapping com.mysql.cj.jdbc.ConnectionImpl@7ac083] will not be managed by Spring
+2025-11-04 11:30:02.035 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ec0a0d6]
+2025-11-04 11:38:22.655 [http-nio-0.0.0.0-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:38:22.656 [http-nio-0.0.0.0-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7df2ca43] was not registered for synchronization because synchronization is not active
+2025-11-04 11:38:22.657 [http-nio-0.0.0.0-8081-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1932864397 wrapping com.mysql.cj.jdbc.ConnectionImpl@7ac083] will not be managed by Spring
+2025-11-04 11:38:22.692 [http-nio-0.0.0.0-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7df2ca43]
+2025-11-04 11:38:25.741 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 11:38:54.452 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 24836 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 11:38:54.454 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 11:38:54.455 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 11:38:55.043 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\BlindBoxMapper.class]
+2025-11-04 11:38:55.043 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 11:38:55.044 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blindBoxMapper' and 'com.example.amorproduct.mapper.BlindBoxMapper' mapperInterface
+2025-11-04 11:38:55.045 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'blindBoxMapper'.
+2025-11-04 11:38:55.045 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 11:38:55.046 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 11:38:55.307 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 11:38:55.317 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 11:38:55.318 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 11:38:55.319 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 11:38:55.370 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 11:38:55.371 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 862 ms
+2025-11-04 11:38:55.603 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\BlindBoxMapper.xml]'
+2025-11-04 11:38:55.630 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 11:38:55.928 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 11:38:55.946 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 11:38:55.953 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 2.02 seconds (process running for 2.599)
+2025-11-04 11:38:57.975 [http-nio-0.0.0.0-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 11:38:57.975 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 11:38:57.976 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-04 11:38:58.004 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:38:58.007 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3974259d] was not registered for synchronization because synchronization is not active
+2025-11-04 11:38:58.012 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 11:38:58.126 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f213e12
+2025-11-04 11:38:58.128 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 11:38:58.131 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1056191070 wrapping com.mysql.cj.jdbc.ConnectionImpl@6f213e12] will not be managed by Spring
+2025-11-04 11:38:58.169 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3974259d]
+2025-11-04 11:38:58.171 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:38:58.171 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ae130fe] was not registered for synchronization because synchronization is not active
+2025-11-04 11:38:58.188 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@76552749 wrapping com.mysql.cj.jdbc.ConnectionImpl@6f213e12] will not be managed by Spring
+2025-11-04 11:38:58.245 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ae130fe]
+2025-11-04 11:41:00.794 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 11:41:03.249 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 23248 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 11:41:03.251 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 11:41:03.251 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 11:41:03.724 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\BlindBoxMapper.class]
+2025-11-04 11:41:03.724 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 11:41:03.725 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blindBoxMapper' and 'com.example.amorproduct.mapper.BlindBoxMapper' mapperInterface
+2025-11-04 11:41:03.726 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'blindBoxMapper'.
+2025-11-04 11:41:03.726 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 11:41:03.727 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 11:41:03.963 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 11:41:03.972 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 11:41:03.974 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 11:41:03.974 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 11:41:04.022 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 11:41:04.022 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 737 ms
+2025-11-04 11:41:04.256 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\BlindBoxMapper.xml]'
+2025-11-04 11:41:04.274 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 11:41:04.553 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 11:41:04.573 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 11:41:04.580 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 1.846 seconds (process running for 2.435)
+2025-11-04 11:41:06.511 [http-nio-0.0.0.0-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 11:41:06.511 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 11:41:06.512 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-04 11:41:06.541 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:41:06.544 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2580f614] was not registered for synchronization because synchronization is not active
+2025-11-04 11:41:06.550 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 11:41:06.666 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a7eac71
+2025-11-04 11:41:06.667 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 11:41:06.671 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1014734357 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:41:06.711 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2580f614]
+2025-11-04 11:41:06.713 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:41:06.714 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d6b5a7] was not registered for synchronization because synchronization is not active
+2025-11-04 11:41:06.725 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@545276532 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:41:06.744 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d6b5a7]
+2025-11-04 11:41:06.744 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:41:06.744 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@410fdda1] was not registered for synchronization because synchronization is not active
+2025-11-04 11:41:06.744 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@467212188 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:41:06.746 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@410fdda1]
+2025-11-04 11:41:06.746 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:41:06.746 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32b91618] was not registered for synchronization because synchronization is not active
+2025-11-04 11:41:06.746 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@233060155 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:41:06.748 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32b91618]
+2025-11-04 11:41:06.749 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:41:06.749 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a02fee6] was not registered for synchronization because synchronization is not active
+2025-11-04 11:41:06.749 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1886466152 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:41:06.751 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a02fee6]
+2025-11-04 11:42:32.104 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:42:32.104 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@123f380c] was not registered for synchronization because synchronization is not active
+2025-11-04 11:42:32.104 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@486069307 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:42:32.107 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@123f380c]
+2025-11-04 11:42:32.107 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:42:32.107 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d3691a6] was not registered for synchronization because synchronization is not active
+2025-11-04 11:42:32.107 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1437096887 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:42:32.109 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d3691a6]
+2025-11-04 11:42:32.109 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:42:32.109 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36aafcae] was not registered for synchronization because synchronization is not active
+2025-11-04 11:42:32.109 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2144923772 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:42:32.111 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36aafcae]
+2025-11-04 11:42:32.111 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:42:32.111 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60b2d2b8] was not registered for synchronization because synchronization is not active
+2025-11-04 11:42:32.111 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@60071641 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:42:32.113 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60b2d2b8]
+2025-11-04 11:42:32.113 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 11:42:32.113 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@441ac7b7] was not registered for synchronization because synchronization is not active
+2025-11-04 11:42:32.113 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@852228766 wrapping com.mysql.cj.jdbc.ConnectionImpl@6a7eac71] will not be managed by Spring
+2025-11-04 11:42:32.115 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@441ac7b7]
+2025-11-04 14:01:01.256 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:01:01.257 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48531ea2] was not registered for synchronization because synchronization is not active
+2025-11-04 14:01:01.257 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1184164312 wrapping com.mysql.cj.jdbc.ConnectionImpl@42ab75d2] will not be managed by Spring
+2025-11-04 14:01:01.261 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48531ea2]
+2025-11-04 14:01:01.262 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:01:01.262 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57df5bba] was not registered for synchronization because synchronization is not active
+2025-11-04 14:01:01.262 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@912564912 wrapping com.mysql.cj.jdbc.ConnectionImpl@42ab75d2] will not be managed by Spring
+2025-11-04 14:01:01.269 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57df5bba]
+2025-11-04 14:01:01.279 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:01:01.279 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13ee51b2] was not registered for synchronization because synchronization is not active
+2025-11-04 14:01:01.279 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@349102411 wrapping com.mysql.cj.jdbc.ConnectionImpl@42ab75d2] will not be managed by Spring
+2025-11-04 14:01:01.285 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13ee51b2]
+2025-11-04 14:01:01.286 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:01:01.286 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a09babb] was not registered for synchronization because synchronization is not active
+2025-11-04 14:01:01.286 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1795889545 wrapping com.mysql.cj.jdbc.ConnectionImpl@42ab75d2] will not be managed by Spring
+2025-11-04 14:01:01.288 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a09babb]
+2025-11-04 14:01:01.288 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:01:01.288 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@337ac9b4] was not registered for synchronization because synchronization is not active
+2025-11-04 14:01:01.289 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1960931586 wrapping com.mysql.cj.jdbc.ConnectionImpl@42ab75d2] will not be managed by Spring
+2025-11-04 14:01:01.291 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@337ac9b4]
+2025-11-04 14:01:01.292 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:01:01.292 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365e7603] was not registered for synchronization because synchronization is not active
+2025-11-04 14:01:01.292 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@689326722 wrapping com.mysql.cj.jdbc.ConnectionImpl@42ab75d2] will not be managed by Spring
+2025-11-04 14:01:01.298 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365e7603]
+2025-11-04 14:07:18.534 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:07:18.535 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74b6be96] was not registered for synchronization because synchronization is not active
+2025-11-04 14:07:18.537 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2054250096 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e4ed5e6] will not be managed by Spring
+2025-11-04 14:07:18.568 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74b6be96]
+2025-11-04 14:07:18.569 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:07:18.569 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8bf5e13] was not registered for synchronization because synchronization is not active
+2025-11-04 14:07:18.569 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1116506350 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e4ed5e6] will not be managed by Spring
+2025-11-04 14:07:18.588 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8bf5e13]
+2025-11-04 14:07:18.589 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:07:18.589 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bc353c4] was not registered for synchronization because synchronization is not active
+2025-11-04 14:07:18.589 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@973001577 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e4ed5e6] will not be managed by Spring
+2025-11-04 14:07:18.608 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bc353c4]
+2025-11-04 14:07:18.609 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:07:18.609 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27d9264c] was not registered for synchronization because synchronization is not active
+2025-11-04 14:07:18.610 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1993677824 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e4ed5e6] will not be managed by Spring
+2025-11-04 14:07:18.626 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27d9264c]
+2025-11-04 14:07:18.626 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:07:18.626 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@938bc66] was not registered for synchronization because synchronization is not active
+2025-11-04 14:07:18.628 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1331728341 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e4ed5e6] will not be managed by Spring
+2025-11-04 14:07:18.642 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@938bc66]
+2025-11-04 14:07:18.642 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:07:18.642 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c77e0d1] was not registered for synchronization because synchronization is not active
+2025-11-04 14:07:18.643 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1088468661 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e4ed5e6] will not be managed by Spring
+2025-11-04 14:07:18.657 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c77e0d1]
+2025-11-04 14:09:43.130 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s930ms459µs600ns).
+2025-11-04 14:14:11.157 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:14:11.157 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6318e51c] was not registered for synchronization because synchronization is not active
+2025-11-04 14:14:11.158 [http-nio-0.0.0.0-8081-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1843332879 wrapping com.mysql.cj.jdbc.ConnectionImpl@69e08e6c] will not be managed by Spring
+2025-11-04 14:14:11.160 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6318e51c]
+2025-11-04 14:14:11.160 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:14:11.160 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8f63db1] was not registered for synchronization because synchronization is not active
+2025-11-04 14:14:11.160 [http-nio-0.0.0.0-8081-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@495232223 wrapping com.mysql.cj.jdbc.ConnectionImpl@69e08e6c] will not be managed by Spring
+2025-11-04 14:14:11.167 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8f63db1]
+2025-11-04 14:14:11.167 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:14:11.167 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ba1e299] was not registered for synchronization because synchronization is not active
+2025-11-04 14:14:11.167 [http-nio-0.0.0.0-8081-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1743102825 wrapping com.mysql.cj.jdbc.ConnectionImpl@69e08e6c] will not be managed by Spring
+2025-11-04 14:14:11.170 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ba1e299]
+2025-11-04 14:14:11.170 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:14:11.170 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a207cf2] was not registered for synchronization because synchronization is not active
+2025-11-04 14:14:11.170 [http-nio-0.0.0.0-8081-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@514974725 wrapping com.mysql.cj.jdbc.ConnectionImpl@69e08e6c] will not be managed by Spring
+2025-11-04 14:14:11.172 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a207cf2]
+2025-11-04 14:14:11.172 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:14:11.172 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c6ea85c] was not registered for synchronization because synchronization is not active
+2025-11-04 14:14:11.172 [http-nio-0.0.0.0-8081-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1703975119 wrapping com.mysql.cj.jdbc.ConnectionImpl@69e08e6c] will not be managed by Spring
+2025-11-04 14:14:11.174 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c6ea85c]
+2025-11-04 14:14:11.174 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:14:11.174 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47ce7d06] was not registered for synchronization because synchronization is not active
+2025-11-04 14:14:11.175 [http-nio-0.0.0.0-8081-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@895570226 wrapping com.mysql.cj.jdbc.ConnectionImpl@69e08e6c] will not be managed by Spring
+2025-11-04 14:14:11.176 [http-nio-0.0.0.0-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47ce7d06]
+2025-11-04 14:15:32.731 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:32.732 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fbf8815] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:32.732 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1967368234 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:32.735 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fbf8815]
+2025-11-04 14:15:32.736 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:32.736 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7179eaf3] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:32.736 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@429071886 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:32.740 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7179eaf3]
+2025-11-04 14:15:32.741 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:32.741 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e7f66c0] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:32.741 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@820984718 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:32.744 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e7f66c0]
+2025-11-04 14:15:32.745 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:32.745 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cbb332a] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:32.745 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1493633307 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:32.748 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cbb332a]
+2025-11-04 14:15:32.748 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:32.748 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48af5aaa] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:32.749 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1039667958 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:32.752 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48af5aaa]
+2025-11-04 14:15:32.752 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:32.753 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2787206d] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:32.753 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@365909053 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:32.755 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2787206d]
+2025-11-04 14:15:40.853 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:40.853 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@572d3fdd] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:40.854 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1508559688 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:40.855 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@572d3fdd]
+2025-11-04 14:15:40.855 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:40.856 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18d7c173] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:40.856 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@641390179 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:40.858 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18d7c173]
+2025-11-04 14:15:40.859 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:40.859 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e02b0d6] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:40.859 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2029534780 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:40.861 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e02b0d6]
+2025-11-04 14:15:40.861 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:40.861 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec97828] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:40.861 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1158085927 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:40.863 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec97828]
+2025-11-04 14:15:40.863 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:40.863 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f008e7b] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:40.863 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@978166155 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:40.865 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f008e7b]
+2025-11-04 14:15:40.865 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:15:40.865 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5382a55] was not registered for synchronization because synchronization is not active
+2025-11-04 14:15:40.865 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2125471711 wrapping com.mysql.cj.jdbc.ConnectionImpl@f6c69cb] will not be managed by Spring
+2025-11-04 14:15:40.867 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5382a55]
+2025-11-04 14:17:31.214 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:17:31.214 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da3db38] was not registered for synchronization because synchronization is not active
+2025-11-04 14:17:31.214 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1399074556 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:17:31.217 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da3db38]
+2025-11-04 14:17:31.217 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:17:31.217 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@516057af] was not registered for synchronization because synchronization is not active
+2025-11-04 14:17:31.217 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@595693745 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:17:31.221 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@516057af]
+2025-11-04 14:17:31.221 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:17:31.221 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7276db88] was not registered for synchronization because synchronization is not active
+2025-11-04 14:17:31.222 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@561522502 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:17:31.225 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7276db88]
+2025-11-04 14:17:31.225 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:17:31.226 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3256f206] was not registered for synchronization because synchronization is not active
+2025-11-04 14:17:31.227 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1983432031 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:17:31.230 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3256f206]
+2025-11-04 14:17:31.230 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:17:31.230 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1209ee5] was not registered for synchronization because synchronization is not active
+2025-11-04 14:17:31.231 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@73632261 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:17:31.234 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1209ee5]
+2025-11-04 14:17:31.234 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:17:31.234 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@766f096c] was not registered for synchronization because synchronization is not active
+2025-11-04 14:17:31.234 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1933403890 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:17:31.236 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@766f096c]
+2025-11-04 14:18:27.626 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:18:27.626 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76cb7519] was not registered for synchronization because synchronization is not active
+2025-11-04 14:18:27.627 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1786165071 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:18:27.628 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76cb7519]
+2025-11-04 14:18:27.628 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:18:27.628 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12302cf8] was not registered for synchronization because synchronization is not active
+2025-11-04 14:18:27.628 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1073672218 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:18:27.631 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12302cf8]
+2025-11-04 14:18:27.632 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:18:27.632 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4580d384] was not registered for synchronization because synchronization is not active
+2025-11-04 14:18:27.632 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1447321632 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:18:27.633 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4580d384]
+2025-11-04 14:18:27.633 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:18:27.633 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11b3b5b5] was not registered for synchronization because synchronization is not active
+2025-11-04 14:18:27.633 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1391220980 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:18:27.635 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11b3b5b5]
+2025-11-04 14:18:27.635 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:18:27.635 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28078364] was not registered for synchronization because synchronization is not active
+2025-11-04 14:18:27.635 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@613782988 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:18:27.636 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28078364]
+2025-11-04 14:18:27.636 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:18:27.636 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50299c15] was not registered for synchronization because synchronization is not active
+2025-11-04 14:18:27.636 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1151412695 wrapping com.mysql.cj.jdbc.ConnectionImpl@575bb048] will not be managed by Spring
+2025-11-04 14:18:27.637 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50299c15]
+2025-11-04 14:20:10.106 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:20:10.106 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523a7829] was not registered for synchronization because synchronization is not active
+2025-11-04 14:20:10.106 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1643674583 wrapping com.mysql.cj.jdbc.ConnectionImpl@24e83c43] will not be managed by Spring
+2025-11-04 14:20:10.109 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523a7829]
+2025-11-04 14:20:10.109 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:20:10.109 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a33bb] was not registered for synchronization because synchronization is not active
+2025-11-04 14:20:10.109 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@549373672 wrapping com.mysql.cj.jdbc.ConnectionImpl@24e83c43] will not be managed by Spring
+2025-11-04 14:20:10.112 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a33bb]
+2025-11-04 14:20:10.112 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:20:10.112 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d35ac0] was not registered for synchronization because synchronization is not active
+2025-11-04 14:20:10.112 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@304549546 wrapping com.mysql.cj.jdbc.ConnectionImpl@24e83c43] will not be managed by Spring
+2025-11-04 14:20:10.114 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d35ac0]
+2025-11-04 14:20:10.114 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:20:10.114 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e0782bb] was not registered for synchronization because synchronization is not active
+2025-11-04 14:20:10.114 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1431948513 wrapping com.mysql.cj.jdbc.ConnectionImpl@24e83c43] will not be managed by Spring
+2025-11-04 14:20:10.117 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e0782bb]
+2025-11-04 14:20:10.117 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:20:10.117 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc122d9] was not registered for synchronization because synchronization is not active
+2025-11-04 14:20:10.117 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1231123776 wrapping com.mysql.cj.jdbc.ConnectionImpl@24e83c43] will not be managed by Spring
+2025-11-04 14:20:10.118 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc122d9]
+2025-11-04 14:20:10.118 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 14:20:10.118 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2341d295] was not registered for synchronization because synchronization is not active
+2025-11-04 14:20:10.119 [http-nio-0.0.0.0-8081-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1365568462 wrapping com.mysql.cj.jdbc.ConnectionImpl@24e83c43] will not be managed by Spring
+2025-11-04 14:20:10.120 [http-nio-0.0.0.0-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2341d295]

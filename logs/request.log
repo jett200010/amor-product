@@ -89,3 +89,119 @@
 2025-11-04 10:45:56.332 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 246 ms
 2025-11-04 10:45:56.332 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
 
+2025-11-04 11:19:23.486 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:19:23.487 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/top-selling
+2025-11-04 11:19:23.487 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 192.168.100.76
+2025-11-04 11:19:23.488 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: limit=3
+2025-11-04 11:19:23.488 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: limit=3
+2025-11-04 11:19:23.498 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:19:23.498 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 12 ms
+2025-11-04 11:19:23.498 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:27:17.021 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:27:17.021 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 11:27:17.023 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 11:27:17.450 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:27:17.450 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 429 ms
+2025-11-04 11:27:17.450 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:27:31.628 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:27:31.629 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /images/blind-box-1.jpg
+2025-11-04 11:27:31.629 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 11:27:31.636 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 404
+2025-11-04 11:27:31.637 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 8 ms
+2025-11-04 11:27:31.637 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:30:02.011 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:30:02.012 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/top-selling
+2025-11-04 11:30:02.012 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 192.168.100.76
+2025-11-04 11:30:02.013 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: limit=3
+2025-11-04 11:30:02.013 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: limit=3
+2025-11-04 11:30:02.041 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:30:02.041 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 30 ms
+2025-11-04 11:30:02.041 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:38:22.654 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:38:22.655 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 11:38:22.655 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 11:38:22.928 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:38:22.928 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 274 ms
+2025-11-04 11:38:22.928 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:38:57.990 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:38:57.990 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 11:38:57.991 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 11:38:58.353 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:38:58.353 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 363 ms
+2025-11-04 11:38:58.353 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:41:06.525 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:41:06.526 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 11:41:06.527 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 11:41:06.799 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:41:06.799 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 274 ms
+2025-11-04 11:41:06.799 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 11:42:32.103 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 11:42:32.103 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 11:42:32.104 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 11:42:32.116 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 11:42:32.116 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 13 ms
+2025-11-04 11:42:32.116 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:01:01.255 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:01:01.256 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:01:01.256 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:01:01.312 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:01:01.312 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 57 ms
+2025-11-04 14:01:01.312 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:07:14.272 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:07:14.272 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:07:14.272 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:09:43.134 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:09:43.134 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 148863 ms
+2025-11-04 14:09:43.134 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:14:11.157 [http-nio-0.0.0.0-8081-exec-9] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:14:11.157 [http-nio-0.0.0.0-8081-exec-9] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:14:11.157 [http-nio-0.0.0.0-8081-exec-9] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:14:11.180 [http-nio-0.0.0.0-8081-exec-9] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:14:11.180 [http-nio-0.0.0.0-8081-exec-9] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 23 ms
+2025-11-04 14:14:11.180 [http-nio-0.0.0.0-8081-exec-9] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:15:32.731 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:15:32.731 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:15:32.731 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:15:32.757 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:15:32.757 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 26 ms
+2025-11-04 14:15:32.757 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:15:40.853 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:15:40.853 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:15:40.853 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:15:40.868 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:15:40.868 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 15 ms
+2025-11-04 14:15:40.868 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:17:31.213 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:17:31.213 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:17:31.214 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:17:31.238 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:17:31.238 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 25 ms
+2025-11-04 14:17:31.238 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:18:27.626 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:18:27.626 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:18:27.626 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:18:27.638 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:18:27.638 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 12 ms
+2025-11-04 14:18:27.638 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 14:20:10.105 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 14:20:10.105 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/blind-boxes
+2025-11-04 14:20:10.106 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 14:20:10.124 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 14:20:10.124 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 19 ms
+2025-11-04 14:20:10.124 [http-nio-0.0.0.0-8081-exec-7] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+

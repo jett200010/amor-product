@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.amorproduct.mapper.BlindBoxMapper">
+
+    <resultMap id="BlindBoxRuleResultMap" type="com.example.amorproduct.domain.BlindBoxRule">
+        <id property="id" column="id"/>
+        <result property="ruleId" column="rule_id"/>
+        <result property="name" column="name"/>
+        <result property="description" column="description"/>
+        <result property="theme" column="theme"/>
+        <result property="category" column="category"/>
+        <result property="categoryValue" column="category_value"/>
+        <result property="minProductCount" column="min_product_count"/>
+        <result property="maxProductCount" column="max_product_count"/>
+        <result property="minTotalPrice" column="min_total_price"/>
+        <result property="maxTotalPrice" column="max_total_price"/>
+        <result property="discountPercentage" column="discount_percentage"/>
+        <result property="status" column="status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <!-- 获取所有可用规则 -->
+    <select id="getAllActiveRules" resultMap="BlindBoxRuleResultMap">
+        SELECT * FROM blind_box_rule
+        WHERE status = 'ACTIVE'
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 根据ID获取规则 -->
+    <select id="getRuleById" resultMap="BlindBoxRuleResultMap">
+        SELECT * FROM blind_box_rule
+        WHERE rule_id = #{ruleId}
+    </select>
+
+    <!-- 根据分类和价格区间随机获取商品 -->
+    <select id="getRandomProductsByCategory" resultType="com.example.amorproduct.domain.ProductFullInfo">
+        SELECT
+            p.id,
+            p.product_id as productId,
+            p.title,
+            p.brand,
+            p.main_image_url as mainImageUrl,
+            p.status,
+            pr.current_price as currentPrice,
+            pr.original_price as originalPrice,
+            pr.currency,
+            pr.discount_percentage as discountPercentage,
+            rv.rating,
+            rv.reviews_count as reviewsCount,
+            inv.availability,
+            inv.prime_eligible as primeEligible,
+            cat.root_category as rootCategory,
+            cat.subcategory
+        FROM product_basic_info p
+        LEFT JOIN product_pricing pr ON p.product_id = pr.product_id
+        LEFT JOIN product_reviews_rank rv ON p.product_id = rv.product_id
+        LEFT JOIN product_inventory inv ON p.product_id = inv.product_id
+        LEFT JOIN product_category_tags cat ON p.product_id = cat.product_id
+        WHERE p.status = 'ACTIVE'
+        <if test="categoryField == 'rootCategory'">
+            AND cat.root_category = #{categoryValue}
+        </if>
+        <if test="categoryField == 'subcategory'">
+            AND cat.subcategory = #{categoryValue}
+        </if>
+        <if test="minPrice != null">
+            AND pr.current_price &gt;= #{minPrice}
+        </if>
+        <if test="maxPrice != null">
+            AND pr.current_price &lt;= #{maxPrice}
+        </if>
+        ORDER BY RAND()
+        LIMIT #{limit}
+    </select>
+
+    <!-- 创建规则 -->
+    <insert id="createRule" parameterType="com.example.amorproduct.domain.BlindBoxRule">
+        INSERT INTO blind_box_rule (
+            rule_id, name, description, theme,
+            category, category_value,
+            min_product_count, max_product_count,
+            min_total_price, max_total_price,
+            discount_percentage, status,
+            create_time, update_time
+        ) VALUES (
+            #{ruleId}, #{name}, #{description}, #{theme},
+            #{category}, #{categoryValue},
+            #{minProductCount}, #{maxProductCount},
+            #{minTotalPrice}, #{maxTotalPrice},
+            #{discountPercentage}, #{status},
+            NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 更新规则 -->
+    <update id="updateRule" parameterType="com.example.amorproduct.domain.BlindBoxRule">
+        UPDATE blind_box_rule
+        SET name = #{name},
+            description = #{description},
+            theme = #{theme},
+            category = #{category},
+            category_value = #{categoryValue},
+            min_product_count = #{minProductCount},
+            max_product_count = #{maxProductCount},
+            min_total_price = #{minTotalPrice},
+            max_total_price = #{maxTotalPrice},
+            discount_percentage = #{discountPercentage},
+            status = #{status},
+            update_time = NOW()
+        WHERE rule_id = #{ruleId}
+    </update>
+
+    <!-- 删除规则 -->
+    <delete id="deleteRule">
+        DELETE FROM blind_box_rule WHERE rule_id = #{ruleId}
+    </delete>
+
+</mapper>
+
