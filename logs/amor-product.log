@@ -1,0 +1,163 @@
+2025-11-04 10:02:56.149 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 18480 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 10:02:56.150 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 10:02:56.151 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 10:02:56.869 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 10:02:56.870 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 10:02:56.873 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 10:02:57.202 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 10:02:57.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:02:57.217 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 10:02:57.218 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 10:02:57.282 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 10:02:57.283 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1080 ms
+2025-11-04 10:02:57.573 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 10:02:57.932 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:02:57.955 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 10:02:57.963 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 2.939 seconds (process running for 4.219)
+2025-11-04 10:03:23.318 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 10:03:30.184 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 5032 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 10:03:30.186 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 10:03:30.187 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 10:03:30.916 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 10:03:30.918 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 10:03:30.922 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 10:03:31.385 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 10:03:31.402 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:03:31.404 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 10:03:31.405 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 10:03:31.489 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 10:03:31.490 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1242 ms
+2025-11-04 10:03:31.831 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 10:03:32.172 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:03:32.195 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 10:03:32.204 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 2.901 seconds (process running for 3.778)
+2025-11-04 10:03:40.900 [http-nio-0.0.0.0-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 10:03:40.900 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 10:03:40.902 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-04 10:03:40.955 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:03:40.959 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67a247b9] was not registered for synchronization because synchronization is not active
+2025-11-04 10:03:40.967 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 10:03:41.135 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@256ae6e2
+2025-11-04 10:03:41.137 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 10:03:41.142 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@452891708 wrapping com.mysql.cj.jdbc.ConnectionImpl@256ae6e2] will not be managed by Spring
+2025-11-04 10:03:41.218 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67a247b9]
+2025-11-04 10:09:52.054 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:09:52.054 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e78153d] was not registered for synchronization because synchronization is not active
+2025-11-04 10:09:52.054 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1623193218 wrapping com.mysql.cj.jdbc.ConnectionImpl@256ae6e2] will not be managed by Spring
+2025-11-04 10:09:52.057 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e78153d]
+2025-11-04 10:12:46.101 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:12:46.101 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79660d86] was not registered for synchronization because synchronization is not active
+2025-11-04 10:12:46.102 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2060684846 wrapping com.mysql.cj.jdbc.ConnectionImpl@256ae6e2] will not be managed by Spring
+2025-11-04 10:12:46.115 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79660d86]
+2025-11-04 10:16:36.648 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 10:16:46.918 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 19676 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 10:16:46.920 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 10:16:46.921 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 10:16:48.148 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 10:16:48.151 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 10:16:48.155 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 10:16:48.811 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 10:16:48.838 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:16:48.843 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 10:16:48.843 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 10:16:48.963 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 10:16:48.964 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1963 ms
+2025-11-04 10:16:49.538 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 10:16:49.978 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:16:50.009 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 10:16:50.018 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 4.265 seconds (process running for 5.536)
+2025-11-04 10:16:52.778 [http-nio-0.0.0.0-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 10:16:52.778 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 10:16:52.780 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-04 10:16:52.859 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:16:52.867 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b0347ca] was not registered for synchronization because synchronization is not active
+2025-11-04 10:16:52.878 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 10:16:53.096 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23cc4b44
+2025-11-04 10:16:53.098 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 10:16:53.102 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@350682114 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:16:53.170 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b0347ca]
+2025-11-04 10:17:14.862 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:17:14.862 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e23ff41] was not registered for synchronization because synchronization is not active
+2025-11-04 10:17:14.863 [http-nio-0.0.0.0-8081-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1357126389 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:17:14.878 [http-nio-0.0.0.0-8081-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e23ff41]
+2025-11-04 10:17:21.488 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:17:21.488 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@251b85a1] was not registered for synchronization because synchronization is not active
+2025-11-04 10:17:21.488 [http-nio-0.0.0.0-8081-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@735866738 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:17:21.493 [http-nio-0.0.0.0-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@251b85a1]
+2025-11-04 10:17:24.212 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:17:24.213 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21172717] was not registered for synchronization because synchronization is not active
+2025-11-04 10:17:24.213 [http-nio-0.0.0.0-8081-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@802217285 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:17:24.217 [http-nio-0.0.0.0-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21172717]
+2025-11-04 10:17:36.740 [http-nio-0.0.0.0-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:17:36.740 [http-nio-0.0.0.0-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5aed562a] was not registered for synchronization because synchronization is not active
+2025-11-04 10:17:36.741 [http-nio-0.0.0.0-8081-exec-6] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@332163508 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:17:36.745 [http-nio-0.0.0.0-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5aed562a]
+2025-11-04 10:17:49.264 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:17:49.265 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cca199] was not registered for synchronization because synchronization is not active
+2025-11-04 10:17:49.266 [http-nio-0.0.0.0-8081-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@218849168 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:17:49.272 [http-nio-0.0.0.0-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cca199]
+2025-11-04 10:23:16.224 [http-nio-0.0.0.0-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:23:16.224 [http-nio-0.0.0.0-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a080418] was not registered for synchronization because synchronization is not active
+2025-11-04 10:23:16.225 [http-nio-0.0.0.0-8081-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@349169961 wrapping com.mysql.cj.jdbc.ConnectionImpl@23cc4b44] will not be managed by Spring
+2025-11-04 10:23:16.254 [http-nio-0.0.0.0-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a080418]
+2025-11-04 10:41:30.316 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 10:41:34.275 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 19464 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 10:41:34.277 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 10:41:34.278 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 10:41:35.349 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 10:41:35.351 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 10:41:35.354 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 10:41:35.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 10:41:35.928 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:41:35.931 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 10:41:35.932 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 10:41:36.057 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 10:41:36.059 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1711 ms
+2025-11-04 10:41:36.526 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 10:41:37.049 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:41:37.081 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 10:41:37.092 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 3.874 seconds (process running for 4.907)
+2025-11-04 10:43:24.131 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 10:43:28.095 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 15920 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 10:43:28.099 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 10:43:28.101 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 10:43:29.230 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 10:43:29.232 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 10:43:29.234 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 10:43:29.758 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 10:43:29.774 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:43:29.777 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 10:43:29.777 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 10:43:29.865 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 10:43:29.865 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1683 ms
+2025-11-04 10:43:30.342 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 10:43:30.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:43:30.921 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 10:43:30.935 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 3.841 seconds (process running for 4.533)
+2025-11-04 10:44:23.195 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 10:45:00.319 [main] INFO  com.example.amorproduct.AmorProductApplication - Starting AmorProductApplication using Java 17.0.12 with PID 20864 (E:\other\amor-product\target\classes started by admin in E:\other\amor-product)
+2025-11-04 10:45:00.321 [main] DEBUG com.example.amorproduct.AmorProductApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-04 10:45:00.322 [main] INFO  com.example.amorproduct.AmorProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 10:45:00.799 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\other\amor-product\target\classes\com\example\amorproduct\mapper\ProductMapper.class]
+2025-11-04 10:45:00.800 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'productMapper' and 'com.example.amorproduct.mapper.ProductMapper' mapperInterface
+2025-11-04 10:45:00.802 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2025-11-04 10:45:01.061 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 10:45:01.071 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:45:01.072 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 10:45:01.072 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 10:45:01.125 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 10:45:01.126 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 770 ms
+2025-11-04 10:45:01.354 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\other\amor-product\target\classes\mapper\ProductMapper.xml]'
+2025-11-04 10:45:01.610 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-11-04 10:45:01.628 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 10:45:01.634 [main] INFO  com.example.amorproduct.AmorProductApplication - Started AmorProductApplication in 1.821 seconds (process running for 2.537)
+2025-11-04 10:45:56.066 [http-nio-0.0.0.0-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 10:45:56.066 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 10:45:56.067 [http-nio-0.0.0.0-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-04 10:45:56.108 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-11-04 10:45:56.111 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@176e401b] was not registered for synchronization because synchronization is not active
+2025-11-04 10:45:56.116 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 10:45:56.232 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6193f22
+2025-11-04 10:45:56.234 [http-nio-0.0.0.0-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 10:45:56.236 [http-nio-0.0.0.0-8081-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1434763718 wrapping com.mysql.cj.jdbc.ConnectionImpl@6193f22] will not be managed by Spring
+2025-11-04 10:45:56.278 [http-nio-0.0.0.0-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@176e401b]

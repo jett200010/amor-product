@@ -227,72 +227,72 @@
     </select>
 
     <!-- 根据平台查询商品列表 -->
-    <select id="getProductsByPlatform" resultMap="ProductListVOMap">
-        SELECT <include refid="listSelectFields"/>
+    <select id="getProductsByPlatform" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE pbi.platform = #{platform}
         ORDER BY pbi.updated_at DESC
     </select>
 
     <!-- 根据品牌查询商品列表 -->
-    <select id="getProductsByBrand" resultMap="ProductListVOMap">
-        SELECT <include refid="listSelectFields"/>
+    <select id="getProductsByBrand" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE pbi.brand = #{brand}
         ORDER BY pbi.updated_at DESC
     </select>
 
     <!-- 根据卖家ID查询商品列表 -->
-    <select id="getProductsBySellerId" resultMap="ProductSellerVOMap">
-        SELECT <include refid="sellerSelectFields"/>
+    <select id="getProductsBySellerId" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE pbi.seller_id = #{sellerId}
         ORDER BY pbi.updated_at DESC
     </select>
 
     <!-- 根据根分类查询商品列表 -->
-    <select id="getProductsByRootCategory" resultMap="ProductCategoryVOMap">
-        SELECT <include refid="categorySelectFields"/>
+    <select id="getProductsByRootCategory" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE pct.root_category = #{rootCategory}
         ORDER BY pbi.updated_at DESC
     </select>
 
     <!-- 分页查询商品信息 -->
-    <select id="getProductsWithPagination" resultMap="ProductListVOMap">
-        SELECT <include refid="listSelectFields"/>
+    <select id="getProductsWithPagination" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         ORDER BY pbi.updated_at DESC
         LIMIT #{offset}, #{limit}
     </select>
 
     <!-- 根据价格区间查询商品 -->
-    <select id="getProductsByPriceRange" resultMap="ProductPriceVOMap">
-        SELECT <include refid="priceSelectFields"/>
+    <select id="getProductsByPriceRange" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE pp.current_price BETWEEN #{minPrice} AND #{maxPrice}
         ORDER BY pp.current_price ASC
     </select>
 
     <!-- 根据评分区间查询商品 -->
-    <select id="getProductsByRatingRange" resultMap="ProductRankVOMap">
-        SELECT <include refid="rankSelectFields"/>
+    <select id="getProductsByRatingRange" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE prr.rating BETWEEN #{minRating} AND #{maxRating}
         ORDER BY prr.rating DESC
     </select>
 
     <!-- 根据商品状态查询商品 -->
-    <select id="getProductsByStatus" resultMap="ProductInventoryVOMap">
-        SELECT <include refid="inventorySelectFields"/>
+    <select id="getProductsByStatus" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE pi.availability = #{status}
         ORDER BY pbi.updated_at DESC
     </select>
 
     <!-- 查询热销商品（根据排名） -->
-    <select id="getTopSellingProducts" resultMap="ProductRankVOMap">
-        SELECT <include refid="rankSelectFields"/>
+    <select id="getTopSellingProducts" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
         <include refid="baseJoins"/>
         WHERE prr.best_sellers_rank IS NOT NULL
         ORDER BY prr.best_sellers_rank ASC

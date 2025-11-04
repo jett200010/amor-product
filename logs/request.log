@@ -1,0 +1,91 @@
+2025-11-04 10:03:40.926 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:03:40.926 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/B0FFSRKCRD
+2025-11-04 10:03:40.927 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:03:41.313 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:03:41.313 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 387 ms
+2025-11-04 10:03:41.313 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:09:52.053 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:09:52.053 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/P10001
+2025-11-04 10:09:52.053 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:09:52.058 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:09:52.058 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 5 ms
+2025-11-04 10:09:52.058 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:12:46.097 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:12:46.097 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products
+2025-11-04 10:12:46.097 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:12:46.098 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: page=1, size=20
+2025-11-04 10:12:46.098 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: page=1&size=20
+2025-11-04 10:12:46.119 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:12:46.119 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 22 ms
+2025-11-04 10:12:46.119 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:16:52.816 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:16:52.816 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products
+2025-11-04 10:16:52.819 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:16:52.820 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: page=1, size=20
+2025-11-04 10:16:52.820 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: page=1&size=20
+2025-11-04 10:16:53.251 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:16:53.251 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 435 ms
+2025-11-04 10:16:53.251 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:17:14.861 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:17:14.861 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products
+2025-11-04 10:17:14.862 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:17:14.862 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: page=1, size=20
+2025-11-04 10:17:14.862 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: page=1&size=20
+2025-11-04 10:17:14.888 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:17:14.889 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 27 ms
+2025-11-04 10:17:14.889 [http-nio-0.0.0.0-8081-exec-2] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:17:21.486 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:17:21.486 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/top-selling
+2025-11-04 10:17:21.487 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:17:21.487 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: limit=20
+2025-11-04 10:17:21.487 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: limit=20
+2025-11-04 10:17:21.495 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:17:21.495 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 9 ms
+2025-11-04 10:17:21.495 [http-nio-0.0.0.0-8081-exec-3] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:17:24.212 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:17:24.212 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/top-selling
+2025-11-04 10:17:24.212 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:17:24.212 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: limit=3
+2025-11-04 10:17:24.212 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: limit=3
+2025-11-04 10:17:24.218 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:17:24.218 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 6 ms
+2025-11-04 10:17:24.218 [http-nio-0.0.0.0-8081-exec-4] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:17:36.737 [http-nio-0.0.0.0-8081-exec-6] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:17:36.738 [http-nio-0.0.0.0-8081-exec-6] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/platform/amazon
+2025-11-04 10:17:36.738 [http-nio-0.0.0.0-8081-exec-6] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:17:36.747 [http-nio-0.0.0.0-8081-exec-6] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:17:36.747 [http-nio-0.0.0.0-8081-exec-6] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 10 ms
+2025-11-04 10:17:36.747 [http-nio-0.0.0.0-8081-exec-6] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:17:49.263 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:17:49.264 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/count
+2025-11-04 10:17:49.264 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:17:49.274 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:17:49.274 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 11 ms
+2025-11-04 10:17:49.274 [http-nio-0.0.0.0-8081-exec-5] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:23:16.223 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:23:16.223 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/price-range
+2025-11-04 10:23:16.223 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:23:16.223 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: minPrice=10, maxPrice=1000
+2025-11-04 10:23:16.223 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: minPrice=10&maxPrice=1000
+2025-11-04 10:23:16.256 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:23:16.256 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 33 ms
+2025-11-04 10:23:16.256 [http-nio-0.0.0.0-8081-exec-8] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+
+2025-11-04 10:45:56.086 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求开始 ==========
+2025-11-04 10:45:56.086 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求路径: GET /api/products/price-range
+2025-11-04 10:45:56.087 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 客户端IP: 127.0.0.1
+2025-11-04 10:45:56.088 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 请求参数: minPrice=10, maxPrice=1000
+2025-11-04 10:45:56.088 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 查询字符串: minPrice=10&maxPrice=1000
+2025-11-04 10:45:56.332 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 响应状态: 200
+2025-11-04 10:45:56.332 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - 执行时间: 246 ms
+2025-11-04 10:45:56.332 [http-nio-0.0.0.0-8081-exec-1] INFO  c.e.amorproduct.interceptor.LoggingInterceptor - ========== 请求结束 ==========
+

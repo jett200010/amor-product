@@ -12,8 +12,22 @@ mybatis:
   type-aliases-package: com.example.amorproduct.domain
   configuration:
     map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
 
 server:
   port: 8081
   address: 0.0.0.0
 
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.example.amorproduct: DEBUG
+    com.example.amorproduct.mapper: DEBUG
+    com.example.amorproduct.interceptor: INFO
+    org.springframework.web: INFO
+    org.mybatis: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+  file:
+    name: logs/amor-product.log

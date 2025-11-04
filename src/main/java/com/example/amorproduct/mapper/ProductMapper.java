@@ -1,8 +1,6 @@
 package com.example.amorproduct.mapper;
 
-import com.example.amorproduct.domain.ProductBasicInfo;
 import com.example.amorproduct.domain.ProductFullInfo;
-import com.example.amorproduct.domain.vo.*;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -17,54 +15,49 @@ public interface ProductMapper {
     ProductFullInfo getProductFullInfoById(@Param("productId") String productId);
 
     /**
-     * 根据平台查询商品列表（返回列表展示信息）
+     * 根据平台查询商品列表（返回完整商品信息）
      */
-    List<ProductListVO> getProductsByPlatform(@Param("platform") String platform);
+    List<ProductFullInfo> getProductsByPlatform(@Param("platform") String platform);
 
     /**
-     * 根据品牌查询商品列表（返回列表展示信息）
+     * 根据品牌查询商品列表（返回完整商品信息）
      */
-    List<ProductListVO> getProductsByBrand(@Param("brand") String brand);
+    List<ProductFullInfo> getProductsByBrand(@Param("brand") String brand);
 
     /**
-     * 根据卖家ID查询商品列表（返回卖家相关信息）
+     * 根据卖家ID查询商品列表（返回完整商品信息）
      */
-    List<ProductSellerVO> getProductsBySellerId(@Param("sellerId") String sellerId);
+    List<ProductFullInfo> getProductsBySellerId(@Param("sellerId") String sellerId);
 
     /**
-     * 根据根分类查询商品列表（返回分类相关信息）
+     * 根据根分类查询商品列表（返回完整商品信息）
      */
-    List<ProductCategoryVO> getProductsByRootCategory(@Param("rootCategory") String rootCategory);
+    List<ProductFullInfo> getProductsByRootCategory(@Param("rootCategory") String rootCategory);
 
     /**
-     * 分页查询商品信息（返回列表展示信息）
+     * 分页查询商品信息（返回完整商品信息）
      */
-    List<ProductListVO> getProductsWithPagination(@Param("offset") int offset, @Param("limit") int limit);
+    List<ProductFullInfo> getProductsWithPagination(@Param("offset") int offset, @Param("limit") int limit);
 
     /**
-     * 根据价格区间查询商品（返回价格相关信息）
+     * 根据价格区间查询商品（返回完整商品信息）
      */
-    List<ProductPriceVO> getProductsByPriceRange(@Param("minPrice") Double minPrice, @Param("maxPrice") Double maxPrice);
+    List<ProductFullInfo> getProductsByPriceRange(@Param("minPrice") Double minPrice, @Param("maxPrice") Double maxPrice);
 
     /**
-     * 根据评分区间查询商品（返回评价排名信息）
+     * 根据评分区间查询商品（返回完整商品信息）
      */
-    List<ProductRankVO> getProductsByRatingRange(@Param("minRating") Double minRating, @Param("maxRating") Double maxRating);
+    List<ProductFullInfo> getProductsByRatingRange(@Param("minRating") Double minRating, @Param("maxRating") Double maxRating);
 
     /**
-     * 根据商品状态查询商品（返回库存相关信息）
+     * 根据商品状态查询商品（返回完整商品信息）
      */
-    List<ProductInventoryVO> getProductsByStatus(@Param("status") String status);
+    List<ProductFullInfo> getProductsByStatus(@Param("status") String status);
 
     /**
-     * 查询热销商品（返回排名相关信息）
+     * 查询热销商品（返回完整商品信息）
      */
-    List<ProductRankVO> getTopSellingProducts(@Param("limit") int limit);
-
-    /**
-     * 查询基础信息
-     */
-    ProductBasicInfo getBasicInfoByProductId(@Param("productId") String productId);
+    List<ProductFullInfo> getTopSellingProducts(@Param("limit") int limit);
 
     /**
      * 统计商品总数
