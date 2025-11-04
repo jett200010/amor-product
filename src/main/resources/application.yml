@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: amor-product
+  datasource:
+    url: jdbc:mysql://localhost:3306/amor_product?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.amorproduct.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8081
+  address: 0.0.0.0
+

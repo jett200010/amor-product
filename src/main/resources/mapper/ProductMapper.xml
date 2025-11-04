@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.amorproduct.mapper.ProductMapper">
+
+    <!-- 结果映射 - 完整商品信息 -->
+    <resultMap id="ProductFullInfoMap" type="com.example.amorproduct.domain.ProductFullInfo">
+        <id column="id" property="id"/>
+        <result column="product_id" property="productId"/>
+        <result column="parent_product_id" property="parentProductId"/>
+        <result column="title" property="title"/>
+        <result column="brand" property="brand"/>
+        <result column="seller_id" property="sellerId"/>
+        <result column="seller_name" property="sellerName"/>
+        <result column="platform" property="platform"/>
+        <result column="product_url" property="productUrl"/>
+        <result column="status" property="status"/>
+        <!-- 商品图片信息 -->
+        <result column="main_image_url" property="mainImageUrl"/>
+        <result column="image_urls" property="imageUrls"/>
+        <!-- 商品描述信息 -->
+        <result column="product_description" property="productDescription"/>
+        <result column="selling_points" property="sellingPoints"/>
+        <result column="specifications" property="specifications"/>
+        <result column="quick_buy_url" property="quickBuyUrl"/>
+        <!-- 价格信息 -->
+        <result column="current_price" property="currentPrice"/>
+        <result column="original_price" property="originalPrice"/>
+        <result column="currency" property="currency"/>
+        <result column="discount_percentage" property="discountPercentage"/>
+        <result column="discount_amount" property="discountAmount"/>
+        <result column="unit_price" property="unitPrice"/>
+        <!-- 评价排名信息 -->
+        <result column="rating" property="rating"/>
+        <result column="reviews_count" property="reviewsCount"/>
+        <result column="answered_questions" property="answeredQuestions"/>
+        <result column="best_sellers_rank" property="bestSellersRank"/>
+        <result column="category_rank" property="categoryRank"/>
+        <result column="category_name" property="categoryName"/>
+        <!-- 匹配度信息 -->
+        <result column="match_percentage" property="matchPercentage"/>
+        <result column="recommendation_reason" property="recommendationReason"/>
+        <!-- 库存物流信息 -->
+        <result column="availability" property="availability"/>
+        <result column="stock_quantity" property="stockQuantity"/>
+        <result column="ships_from" property="shipsFrom"/>
+        <result column="prime_eligible" property="primeEligible"/>
+        <result column="return_policy" property="returnPolicy"/>
+        <!-- 分类标签信息 -->
+        <result column="categories" property="categories"/>
+        <result column="root_category" property="rootCategory"/>
+        <result column="subcategory" property="subcategory"/>
+        <result column="product_type" property="productType"/>
+        <result column="target_audience" property="targetAudience"/>
+        <!-- 商品徽章和标签 -->
+        <result column="badges" property="badges"/>
+        <result column="promotion_tags" property="promotionTags"/>
+        <!-- 时间戳 -->
+        <result column="created_at" property="createdAt"/>
+        <result column="updated_at" property="updatedAt"/>
+    </resultMap>
+
+    <!-- 结果映射 - 商品列表VO -->
+    <resultMap id="ProductListVOMap" type="com.example.amorproduct.domain.vo.ProductListVO">
+        <result column="product_id" property="productId"/>
+        <result column="title" property="title"/>
+        <result column="brand" property="brand"/>
+        <result column="platform" property="platform"/>
+        <result column="current_price" property="currentPrice"/>
+        <result column="original_price" property="originalPrice"/>
+        <result column="currency" property="currency"/>
+        <result column="discount_percentage" property="discountPercentage"/>
+        <result column="rating" property="rating"/>
+        <result column="reviews_count" property="reviewsCount"/>
+        <result column="availability" property="availability"/>
+        <result column="product_url" property="productUrl"/>
+        <result column="updated_at" property="updatedAt"/>
+    </resultMap>
+
+    <!-- 结果映射 - 商品价格VO -->
+    <resultMap id="ProductPriceVOMap" type="com.example.amorproduct.domain.vo.ProductPriceVO">
+        <result column="product_id" property="productId"/>
+        <result column="title" property="title"/>
+        <result column="brand" property="brand"/>
+        <result column="platform" property="platform"/>
+        <result column="current_price" property="currentPrice"/>
+        <result column="original_price" property="originalPrice"/>
+        <result column="currency" property="currency"/>
+        <result column="discount_percentage" property="discountPercentage"/>
+        <result column="discount_amount" property="discountAmount"/>
+        <result column="unit_price" property="unitPrice"/>
+    </resultMap>
+
+    <!-- 结果映射 - 商品排名VO -->
+    <resultMap id="ProductRankVOMap" type="com.example.amorproduct.domain.vo.ProductRankVO">
+        <result column="product_id" property="productId"/>
+        <result column="title" property="title"/>
+        <result column="brand" property="brand"/>
+        <result column="platform" property="platform"/>
+        <result column="rating" property="rating"/>
+        <result column="reviews_count" property="reviewsCount"/>
+        <result column="answered_questions" property="answeredQuestions"/>
+        <result column="best_sellers_rank" property="bestSellersRank"/>
+        <result column="category_rank" property="categoryRank"/>
+        <result column="category_name" property="categoryName"/>
+    </resultMap>
+
+    <!-- 结果映射 - 商品卖家VO -->
+    <resultMap id="ProductSellerVOMap" type="com.example.amorproduct.domain.vo.ProductSellerVO">
+        <result column="product_id" property="productId"/>
+        <result column="title" property="title"/>
+        <result column="brand" property="brand"/>
+        <result column="platform" property="platform"/>
+        <result column="seller_id" property="sellerId"/>
+        <result column="seller_name" property="sellerName"/>
+        <result column="current_price" property="currentPrice"/>
+        <result column="currency" property="currency"/>
+        <result column="rating" property="rating"/>
+        <result column="reviews_count" property="reviewsCount"/>
+        <result column="availability" property="availability"/>
+    </resultMap>
+
+    <!-- 结果映射 - 商品库存VO -->
+    <resultMap id="ProductInventoryVOMap" type="com.example.amorproduct.domain.vo.ProductInventoryVO">
+        <result column="product_id" property="productId"/>
+        <result column="title" property="title"/>
+        <result column="platform" property="platform"/>
+        <result column="availability" property="availability"/>
+        <result column="stock_quantity" property="stockQuantity"/>
+        <result column="ships_from" property="shipsFrom"/>
+        <result column="delivery_options" property="deliveryOptions"/>
+        <result column="prime_eligible" property="primeEligible"/>
+        <result column="return_policy" property="returnPolicy"/>
+    </resultMap>
+
+    <!-- 结果映射 - 商品分类VO -->
+    <resultMap id="ProductCategoryVOMap" type="com.example.amorproduct.domain.vo.ProductCategoryVO">
+        <result column="product_id" property="productId"/>
+        <result column="title" property="title"/>
+        <result column="brand" property="brand"/>
+        <result column="platform" property="platform"/>
+        <result column="categories" property="categories"/>
+        <result column="root_category" property="rootCategory"/>
+        <result column="subcategory" property="subcategory"/>
+        <result column="product_type" property="productType"/>
+        <result column="target_audience" property="targetAudience"/>
+    </resultMap>
+
+    <!-- 完整商品信息查询SQL片段 -->
+    <sql id="fullInfoSelectFields">
+        pbi.id, pbi.product_id, pbi.parent_product_id, pbi.title, pbi.brand,
+        pbi.seller_id, pbi.seller_name, pbi.platform, pbi.product_url, pbi.status,
+        pbi.main_image_url, pbi.image_urls, pbi.product_description, pbi.selling_points,
+        pbi.specifications, pbi.quick_buy_url,
+        pp.current_price, pp.original_price, pp.currency, pp.discount_percentage,
+        pp.discount_amount, pp.unit_price,
+        prr.rating, prr.reviews_count, prr.answered_questions, prr.best_sellers_rank,
+        prr.category_rank, prr.category_name, prr.match_percentage, prr.recommendation_reason,
+        pi.availability, pi.stock_quantity, pi.ships_from,
+        pi.prime_eligible, pi.return_policy,
+        pct.categories, pct.root_category, pct.subcategory, pct.product_type,
+        pct.target_audience, pct.badges, pct.promotion_tags,
+        pbi.created_at, pbi.updated_at
+    </sql>
+
+    <!-- 列表查询SQL片段 -->
+    <sql id="listSelectFields">
+        pbi.product_id, pbi.title, pbi.brand, pbi.platform, pbi.product_url,
+        pbi.main_image_url, pbi.selling_points,
+        pp.current_price, pp.original_price, pp.currency, pp.discount_percentage,
+        prr.rating, prr.reviews_count, prr.match_percentage,
+        pi.availability,
+        pct.badges,
+        pbi.updated_at
+    </sql>
+
+    <!-- 价格查询SQL片段 -->
+    <sql id="priceSelectFields">
+        pbi.product_id, pbi.title, pbi.brand, pbi.platform,
+        pp.current_price, pp.original_price, pp.currency,
+        pp.discount_percentage, pp.discount_amount, pp.unit_price
+    </sql>
+
+    <!-- 排名查询SQL片段 -->
+    <sql id="rankSelectFields">
+        pbi.product_id, pbi.title, pbi.brand, pbi.platform,
+        prr.rating, prr.reviews_count, prr.answered_questions,
+        prr.best_sellers_rank, prr.category_rank, prr.category_name
+    </sql>
+
+    <!-- 卖家查询SQL片段 -->
+    <sql id="sellerSelectFields">
+        pbi.product_id, pbi.title, pbi.brand, pbi.platform,
+        pbi.seller_id, pbi.seller_name,
+        pp.current_price, pp.currency,
+        prr.rating, prr.reviews_count,
+        pi.availability
+    </sql>
+
+    <!-- 库存查询SQL片段 -->
+    <sql id="inventorySelectFields">
+        pbi.product_id, pbi.title, pbi.platform,
+        pi.availability, pi.stock_quantity, pi.ships_from,
+        pi.delivery_options, pi.prime_eligible, pi.return_policy
+    </sql>
+
+    <!-- 分类查询SQL片段 -->
+    <sql id="categorySelectFields">
+        pbi.product_id, pbi.title, pbi.brand, pbi.platform,
+        pct.categories, pct.root_category, pct.subcategory,
+        pct.product_type, pct.target_audience
+    </sql>
+
+    <!-- 基础表连接SQL片段 -->
+    <sql id="baseJoins">
+        FROM product_basic_info pbi
+        LEFT JOIN product_pricing pp ON pbi.product_id = pp.product_id
+        LEFT JOIN product_reviews_rank prr ON pbi.product_id = prr.product_id
+        LEFT JOIN product_inventory pi ON pbi.product_id = pi.product_id
+        LEFT JOIN product_category_tags pct ON pbi.product_id = pct.product_id
+    </sql>
+
+    <!-- 根据商品ID查询完整商品信息 -->
+    <select id="getProductFullInfoById" resultMap="ProductFullInfoMap">
+        SELECT <include refid="fullInfoSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pbi.product_id = #{productId}
+    </select>
+
+    <!-- 根据平台查询商品列表 -->
+    <select id="getProductsByPlatform" resultMap="ProductListVOMap">
+        SELECT <include refid="listSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pbi.platform = #{platform}
+        ORDER BY pbi.updated_at DESC
+    </select>
+
+    <!-- 根据品牌查询商品列表 -->
+    <select id="getProductsByBrand" resultMap="ProductListVOMap">
+        SELECT <include refid="listSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pbi.brand = #{brand}
+        ORDER BY pbi.updated_at DESC
+    </select>
+
+    <!-- 根据卖家ID查询商品列表 -->
+    <select id="getProductsBySellerId" resultMap="ProductSellerVOMap">
+        SELECT <include refid="sellerSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pbi.seller_id = #{sellerId}
+        ORDER BY pbi.updated_at DESC
+    </select>
+
+    <!-- 根据根分类查询商品列表 -->
+    <select id="getProductsByRootCategory" resultMap="ProductCategoryVOMap">
+        SELECT <include refid="categorySelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pct.root_category = #{rootCategory}
+        ORDER BY pbi.updated_at DESC
+    </select>
+
+    <!-- 分页查询商品信息 -->
+    <select id="getProductsWithPagination" resultMap="ProductListVOMap">
+        SELECT <include refid="listSelectFields"/>
+        <include refid="baseJoins"/>
+        ORDER BY pbi.updated_at DESC
+        LIMIT #{offset}, #{limit}
+    </select>
+
+    <!-- 根据价格区间查询商品 -->
+    <select id="getProductsByPriceRange" resultMap="ProductPriceVOMap">
+        SELECT <include refid="priceSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pp.current_price BETWEEN #{minPrice} AND #{maxPrice}
+        ORDER BY pp.current_price ASC
+    </select>
+
+    <!-- 根据评分区间查询商品 -->
+    <select id="getProductsByRatingRange" resultMap="ProductRankVOMap">
+        SELECT <include refid="rankSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE prr.rating BETWEEN #{minRating} AND #{maxRating}
+        ORDER BY prr.rating DESC
+    </select>
+
+    <!-- 根据商品状态查询商品 -->
+    <select id="getProductsByStatus" resultMap="ProductInventoryVOMap">
+        SELECT <include refid="inventorySelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE pi.availability = #{status}
+        ORDER BY pbi.updated_at DESC
+    </select>
+
+    <!-- 查询热销商品（根据排名） -->
+    <select id="getTopSellingProducts" resultMap="ProductRankVOMap">
+        SELECT <include refid="rankSelectFields"/>
+        <include refid="baseJoins"/>
+        WHERE prr.best_sellers_rank IS NOT NULL
+        ORDER BY prr.best_sellers_rank ASC
+        LIMIT #{limit}
+    </select>
+
+    <!-- 查询基础信息 -->
+    <select id="getBasicInfoByProductId" resultType="com.example.amorproduct.domain.ProductBasicInfo">
+        SELECT id, product_id as productId, parent_product_id as parentProductId,
+               title, brand, seller_id as sellerId, seller_name as sellerName,
+               platform, product_url as productUrl, status,
+               created_at as createdAt, updated_at as updatedAt
+        FROM product_basic_info
+        WHERE product_id = #{productId}
+    </select>
+
+    <!-- 统计商品总数 -->
+    <select id="getTotalProductCount" resultType="int">
+        SELECT COUNT(*)
+        FROM product_basic_info
+    </select>
+
+</mapper>
