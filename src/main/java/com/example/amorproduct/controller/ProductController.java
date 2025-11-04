@@ -1,12 +1,14 @@
 package com.example.amorproduct.controller;
 
 import com.example.amorproduct.domain.ProductFullInfo;
+import com.example.amorproduct.domain.vo.ProductQueryVO;
 import com.example.amorproduct.service.ProductService;
 import com.example.amorproduct.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/products")
@@ -90,21 +92,37 @@ public class ProductController {
     }
 
     /**
-     * 分页查询商品信息
-     * GET /api/products?page=1&size=10
+     * 高级查询商品信息（支持多条件组合查询、分页、标题搜索、热销商品查询）
+     * POST /api/products/list
+     * queryType: 0=正常分页查询, 1=查询热销商品
      */
-    @GetMapping
-    public R<List<ProductFullInfo>> getProductsWithPagination(
-            @RequestParam(defaultValue = "1") int page,
-            @RequestParam(defaultValue = "10") int size) {
+    @PostMapping("/list")
+    public R<Map<String, Object>> getProductsWithPagination(@RequestBody ProductQueryVO queryVO) {
         try {
-            if (page <= 0 || size <= 0) {
-                return R.badRequest("页码和每页大小必须大于0");
+            if (queryVO.getQueryType() == null) {
+                queryVO.setQueryType("0");
             }
-            List<ProductFullInfo> products = productService.getProductsWithPagination(page, size);
-            return R.ok("分页查询成功", products);
+            // 参数校验
+            if (queryVO.getPage() == null || queryVO.getPage() <= 0) {
+                queryVO.setPage(1);
+            }
+            if (queryVO.getSize() == null || queryVO.getSize() <= 0) {
+                queryVO.setSize(10);
+            }
+
+            // 执行查询
+            Map<String, Object> result = productService.queryProducts(queryVO);
+
+            String message = "查询成功";
+            if ("1".equals(queryVO.getQueryType())) {
+                message = "热销商品查询成功";
+            } else if (queryVO.getTitle() != null && !queryVO.getTitle().isEmpty()) {
+                message = "标题搜索成功";
+            }
+
+            return R.ok(message, result);
         } catch (Exception e) {
-            return R.fail("分页查询失败：" + e.getMessage());
+            return R.fail("查询商品失败：" + e.getMessage());
         }
     }
 

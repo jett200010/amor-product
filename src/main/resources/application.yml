@@ -7,12 +7,15 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-mybatis:
+# MyBatis-Plus 配置
+mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.amorproduct.domain
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  global-config:
+    banner: false
 
 server:
   port: 8081

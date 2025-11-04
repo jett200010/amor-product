@@ -1,6 +1,7 @@
 package com.example.amorproduct.mapper;
 
 import com.example.amorproduct.domain.ProductFullInfo;
+import com.example.amorproduct.domain.vo.ProductQueryVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -63,4 +64,14 @@ public interface ProductMapper {
      * 统计商品总数
      */
     int getTotalProductCount();
+
+    /**
+     * 高级查询商品（支持多条件组合查询和分页）- 使用LIMIT方式
+     */
+    List<ProductFullInfo> queryProducts(@Param("query") ProductQueryVO query);
+
+    /**
+     * 统计符合条件的商品总数
+     */
+    int countProducts(@Param("query") ProductQueryVO query);
 }

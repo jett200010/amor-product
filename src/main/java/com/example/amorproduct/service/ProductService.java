@@ -1,11 +1,15 @@
 package com.example.amorproduct.service;
 
 import com.example.amorproduct.domain.ProductFullInfo;
+import com.example.amorproduct.domain.vo.ProductQueryVO;
 import com.example.amorproduct.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ProductService {
@@ -89,5 +93,37 @@ public class ProductService {
      */
     public int getTotalProductCount() {
         return productMapper.getTotalProductCount();
+    }
+
+    /**
+     * 高级查询商品（支持多条件组合查询和分页）
+     * 使用手动分页方式
+     */
+    public Map<String, Object> queryProducts(ProductQueryVO query) {
+        // 查询数据列表
+        List<ProductFullInfo> records = new ArrayList<>();
+        int total = 0;
+        int pages = 0;
+        if (query.getQueryType().equals("1")){
+            records = productMapper.getTopSellingProducts(query.getSize());
+            total = query.getSize();
+            pages = 1;
+        }else {
+            records = productMapper.queryProducts(query);
+            total = productMapper.countProducts(query);
+            // 计算总页数
+            pages = (int) Math.ceil((double) total / query.getSize());
+        }
+
+
+        // 构造返回结果
+        Map<String, Object> result = new HashMap<>();
+        result.put("records", records);
+        result.put("total", total);
+        result.put("size", query.getSize());
+        result.put("current", query.getPage());
+        result.put("pages", pages);
+
+        return result;
     }
 }

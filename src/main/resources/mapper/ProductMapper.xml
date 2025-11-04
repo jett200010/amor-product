@@ -315,4 +315,153 @@
         FROM product_basic_info
     </select>
 
+    <!-- 高级查询商品 - 支持多条件组合查询和分页 -->
+    <!-- 使用 LIMIT 手动分页 -->
+    <select id="queryProducts" resultMap="ProductFullInfoMap">
+        SELECT
+            p.id, p.product_id, p.parent_product_id, p.title, p.brand,
+            p.seller_id, p.seller_name, p.platform, p.product_url, p.status,
+            p.main_image_url, p.image_urls,
+            p.product_description, p.selling_points, p.specifications, p.quick_buy_url,
+            pr.current_price, pr.original_price, pr.currency, pr.discount_percentage,
+            pr.discount_amount, pr.unit_price,
+            rv.rating, rv.reviews_count, rv.answered_questions, rv.best_sellers_rank, rv.category_rank,
+            rv.category_name, rv.match_percentage, rv.recommendation_reason,
+            inv.availability, inv.stock_quantity, inv.ships_from, inv.prime_eligible, inv.return_policy,
+            cat.categories, cat.root_category, cat.subcategory,
+            cat.product_type, cat.target_audience,
+            cat.badges, cat.promotion_tags,
+            p.created_at, p.updated_at
+        FROM product_basic_info p
+        LEFT JOIN product_pricing pr ON p.product_id = pr.product_id
+        LEFT JOIN product_reviews_rank rv ON p.product_id = rv.product_id
+        LEFT JOIN product_inventory inv ON p.product_id = inv.product_id
+        LEFT JOIN product_category_tags cat ON p.product_id = cat.product_id
+        <where>
+            <if test="query.productId != null and query.productId != ''">
+                AND p.product_id = #{query.productId}
+            </if>
+            <if test="query.title != null and query.title != ''">
+                AND p.title LIKE CONCAT('%', #{query.title}, '%')
+            </if>
+            <if test="query.brand != null and query.brand != ''">
+                AND p.brand = #{query.brand}
+            </if>
+            <if test="query.sellerId != null and query.sellerId != ''">
+                AND p.seller_id = #{query.sellerId}
+            </if>
+            <if test="query.sellerName != null and query.sellerName != ''">
+                AND p.seller_name LIKE CONCAT('%', #{query.sellerName}, '%')
+            </if>
+            <if test="query.platform != null and query.platform != ''">
+                AND p.platform = #{query.platform}
+            </if>
+            <if test="query.status != null and query.status != ''">
+                AND p.status = #{query.status}
+            </if>
+            <if test="query.rootCategory != null and query.rootCategory != ''">
+                AND cat.root_category = #{query.rootCategory}
+            </if>
+            <if test="query.subcategory != null and query.subcategory != ''">
+                AND cat.subcategory = #{query.subcategory}
+            </if>
+            <if test="query.categoryName != null and query.categoryName != ''">
+                AND rv.category_name = #{query.categoryName}
+            </if>
+            <if test="query.productType != null and query.productType != ''">
+                AND cat.product_type = #{query.productType}
+            </if>
+            <if test="query.targetAudience != null and query.targetAudience != ''">
+                AND cat.target_audience = #{query.targetAudience}
+            </if>
+            <if test="query.minPrice != null">
+                AND pr.current_price &gt;= #{query.minPrice}
+            </if>
+            <if test="query.maxPrice != null">
+                AND pr.current_price &lt;= #{query.maxPrice}
+            </if>
+            <if test="query.minRating != null">
+                AND rv.rating &gt;= #{query.minRating}
+            </if>
+            <if test="query.maxRating != null">
+                AND rv.rating &lt;= #{query.maxRating}
+            </if>
+            <if test="query.availability != null and query.availability != ''">
+                AND inv.availability = #{query.availability}
+            </if>
+            <if test="query.primeEligible != null">
+                AND inv.prime_eligible = #{query.primeEligible}
+            </if>
+        </where>
+        <if test="query.page != null and query.size != null">
+            LIMIT #{query.size} OFFSET ${(query.page - 1) * query.size}
+        </if>
+    </select>
+
+    <!-- 统计符合条件的商品总数 -->
+    <select id="countProducts" resultType="int">
+        SELECT COUNT(*)
+        FROM product_basic_info p
+        LEFT JOIN product_pricing pr ON p.product_id = pr.product_id
+        LEFT JOIN product_reviews_rank rv ON p.product_id = rv.product_id
+        LEFT JOIN product_inventory inv ON p.product_id = inv.product_id
+        LEFT JOIN product_category_tags cat ON p.product_id = cat.product_id
+        <where>
+            <if test="query.productId != null and query.productId != ''">
+                AND p.product_id = #{query.productId}
+            </if>
+            <if test="query.title != null and query.title != ''">
+                AND p.title LIKE CONCAT('%', #{query.title}, '%')
+            </if>
+            <if test="query.brand != null and query.brand != ''">
+                AND p.brand = #{query.brand}
+            </if>
+            <if test="query.sellerId != null and query.sellerId != ''">
+                AND p.seller_id = #{query.sellerId}
+            </if>
+            <if test="query.sellerName != null and query.sellerName != ''">
+                AND p.seller_name LIKE CONCAT('%', #{query.sellerName}, '%')
+            </if>
+            <if test="query.platform != null and query.platform != ''">
+                AND p.platform = #{query.platform}
+            </if>
+            <if test="query.status != null and query.status != ''">
+                AND p.status = #{query.status}
+            </if>
+            <if test="query.rootCategory != null and query.rootCategory != ''">
+                AND cat.root_category = #{query.rootCategory}
+            </if>
+            <if test="query.subcategory != null and query.subcategory != ''">
+                AND cat.subcategory = #{query.subcategory}
+            </if>
+            <if test="query.categoryName != null and query.categoryName != ''">
+                AND rv.category_name = #{query.categoryName}
+            </if>
+            <if test="query.productType != null and query.productType != ''">
+                AND cat.product_type = #{query.productType}
+            </if>
+            <if test="query.targetAudience != null and query.targetAudience != ''">
+                AND cat.target_audience = #{query.targetAudience}
+            </if>
+            <if test="query.minPrice != null">
+                AND pr.current_price &gt;= #{query.minPrice}
+            </if>
+            <if test="query.maxPrice != null">
+                AND pr.current_price &lt;= #{query.maxPrice}
+            </if>
+            <if test="query.minRating != null">
+                AND rv.rating &gt;= #{query.minRating}
+            </if>
+            <if test="query.maxRating != null">
+                AND rv.rating &lt;= #{query.maxRating}
+            </if>
+            <if test="query.availability != null and query.availability != ''">
+                AND inv.availability = #{query.availability}
+            </if>
+            <if test="query.primeEligible != null">
+                AND inv.prime_eligible = #{query.primeEligible}
+            </if>
+        </where>
+    </select>
+
 </mapper>
