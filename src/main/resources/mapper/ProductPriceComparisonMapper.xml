@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.amorproduct.mapper.ProductPriceComparisonMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="ProductPriceComparisonResultMap" type="com.example.amorproduct.domain.ProductPriceComparison">
+        <id property="id" column="id"/>
+        <result property="productId" column="product_id"/>
+        <result property="platform" column="platform"/>
+        <result property="platformProductId" column="platform_product_id"/>
+        <result property="platformUrl" column="platform_url"/>
+        <result property="currentPrice" column="current_price"/>
+        <result property="originalPrice" column="original_price"/>
+        <result property="discountRate" column="discount_rate"/>
+        <result property="currency" column="currency"/>
+        <result property="stockStatus" column="stock_status"/>
+        <result property="shippingFee" column="shipping_fee"/>
+        <result property="isPrime" column="is_prime"/>
+        <result property="estimatedDeliveryDays" column="estimated_delivery_days"/>
+        <result property="sellerName" column="seller_name"/>
+        <result property="sellerRating" column="seller_rating"/>
+        <result property="priceUpdateTime" column="price_update_time"/>
+        <result property="createdAt" column="created_at"/>
+        <result property="updatedAt" column="updated_at"/>
+    </resultMap>
+
+    <!-- 根据商品ID查询价格对比列表 -->
+    <select id="getPriceComparisonByProductId" resultMap="ProductPriceComparisonResultMap">
+        SELECT *
+        FROM product_price_comparison
+        WHERE product_id = #{productId}
+        ORDER BY current_price ASC
+    </select>
+
+    <!-- 插入价格对比记录 -->
+    <insert id="insertPriceComparison" parameterType="com.example.amorproduct.domain.ProductPriceComparison" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product_price_comparison (
+            product_id, platform, platform_product_id, platform_url,
+            current_price, original_price, discount_rate, currency,
+            stock_status, shipping_fee, is_prime, estimated_delivery_days,
+            seller_name, seller_rating, price_update_time
+        ) VALUES (
+            #{productId}, #{platform}, #{platformProductId}, #{platformUrl},
+            #{currentPrice}, #{originalPrice}, #{discountRate}, #{currency},
+            #{stockStatus}, #{shippingFee}, #{isPrime}, #{estimatedDeliveryDays},
+            #{sellerName}, #{sellerRating}, #{priceUpdateTime}
+        )
+    </insert>
+
+    <!-- 更新价格对比记录 -->
+    <update id="updatePriceComparison">
+        UPDATE product_price_comparison
+        SET current_price = #{currentPrice},
+            original_price = #{originalPrice},
+            discount_rate = #{discountRate},
+            stock_status = #{stockStatus},
+            shipping_fee = #{shippingFee},
+            is_prime = #{isPrime},
+            estimated_delivery_days = #{estimatedDeliveryDays},
+            seller_rating = #{sellerRating},
+            price_update_time = #{priceUpdateTime},
+            updated_at = NOW()
+        WHERE product_id = #{productId} AND platform = #{platform}
+    </update>
+
+    <!-- 删除价格对比记录 -->
+    <delete id="deletePriceComparison">
+        DELETE FROM product_price_comparison
+        WHERE product_id = #{productId} AND platform = #{platform}
+    </delete>
+
+    <!-- 获取最低价格的平台 -->
+    <select id="getLowestPriceByProductId" resultMap="ProductPriceComparisonResultMap">
+        SELECT *
+        FROM product_price_comparison
+        WHERE product_id = #{productId}
+        ORDER BY current_price ASC
+        LIMIT 1
+    </select>
+
+</mapper>
+

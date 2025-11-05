@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.amorproduct.mapper.ProductReviewMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="ProductReviewResultMap" type="com.example.amorproduct.domain.ProductReview">
+        <id property="id" column="id"/>
+        <result property="productId" column="product_id"/>
+        <result property="username" column="username"/>
+        <result property="content" column="content"/>
+        <result property="isPositive" column="is_positive"/>
+        <result property="likeCount" column="like_count"/>
+        <result property="reviewTime" column="review_time"/>
+        <result property="createdAt" column="created_at"/>
+        <result property="updatedAt" column="updated_at"/>
+        <result property="isVerifiedPurchase" column="is_verified_purchase"/>
+    </resultMap>
+
+    <resultMap id="ProductReviewVOResultMap" type="com.example.amorproduct.domain.vo.ProductReviewVO">
+        <id property="id" column="id"/>
+        <result property="productId" column="product_id"/>
+        <result property="username" column="username"/>
+        <result property="content" column="content"/>
+        <result property="isPositive" column="is_positive"/>
+        <result property="likeCount" column="like_count"/>
+        <result property="reviewTime" column="review_time"/>
+        <result property="isVerifiedPurchase" column="is_verified_purchase"/>
+    </resultMap>
+
+    <!-- 根据商品ID查询所有评论 -->
+    <select id="getReviewsByProductId" resultMap="ProductReviewResultMap">
+        SELECT *
+        FROM product_review
+        WHERE product_id = #{productId}
+        ORDER BY review_time DESC
+    </select>
+
+    <!-- 根据商品ID查询好评列表 -->
+    <select id="getPositiveReviewsByProductId" resultMap="ProductReviewVOResultMap">
+        SELECT id, product_id, username, content, is_positive, like_count, review_time, is_verified_purchase
+        FROM product_review
+        WHERE product_id = #{productId} AND is_positive = 1
+        ORDER BY like_count DESC, review_time DESC
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+    </select>
+
+    <!-- 根据商品ID查询差评列表 -->
+    <select id="getNegativeReviewsByProductId" resultMap="ProductReviewVOResultMap">
+        SELECT id, product_id, username, content, is_positive, like_count, review_time, is_verified_purchase
+        FROM product_review
+        WHERE product_id = #{productId} AND is_positive = 0
+        ORDER BY like_count DESC, review_time DESC
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+    </select>
+
+    <!-- 统计商品好评数量 -->
+    <select id="countPositiveReviews" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM product_review
+        WHERE product_id = #{productId} AND is_positive = 1
+    </select>
+
+    <!-- 统计商品差评数量 -->
+    <select id="countNegativeReviews" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM product_review
+        WHERE product_id = #{productId} AND is_positive = 0
+    </select>
+
+    <!-- 统计总评论数 -->
+    <select id="countTotalReviews" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM product_review
+        WHERE product_id = #{productId}
+    </select>
+
+    <!-- 插入评论 -->
+    <insert id="insertReview" parameterType="com.example.amorproduct.domain.ProductReview" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product_review (product_id, username, content, is_positive, like_count, review_time, is_verified_purchase, created_at, updated_at)
+        VALUES (#{productId}, #{username}, #{content}, #{isPositive}, #{likeCount}, #{reviewTime}, #{isVerifiedPurchase}, NOW(), NOW())
+    </insert>
+
+    <!-- 更新评论点赞数 -->
+    <update id="updateLikeCount">
+        UPDATE product_review
+        SET like_count = #{likeCount}, updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <!-- 根据ID删除评论 -->
+    <delete id="deleteReviewById">
+        DELETE FROM product_review
+        WHERE id = #{id}
+    </delete>
+
+</mapper>
+

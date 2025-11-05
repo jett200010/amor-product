@@ -1,8 +1,12 @@
 package com.example.amorproduct.service;
 
 import com.example.amorproduct.domain.ProductFullInfo;
+import com.example.amorproduct.domain.ProductReview;
+import com.example.amorproduct.domain.ProductPriceComparison;
 import com.example.amorproduct.domain.vo.ProductQueryVO;
 import com.example.amorproduct.mapper.ProductMapper;
+import com.example.amorproduct.mapper.ProductReviewMapper;
+import com.example.amorproduct.mapper.ProductPriceComparisonMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,11 +21,30 @@ public class ProductService {
     @Autowired
     private ProductMapper productMapper;
 
+    @Autowired
+    private ProductReviewMapper productReviewMapper;
+
+    @Autowired
+    private ProductPriceComparisonMapper productPriceComparisonMapper;
+
     /**
-     * 根据商品ID查询完整商品信息
+     * 根据商品ID查询完整商品信息（包含评论和价格对比）
      */
     public ProductFullInfo getProductFullInfoById(String productId) {
-        return productMapper.getProductFullInfoById(productId);
+        // 查询商品基本信息
+        ProductFullInfo product = productMapper.getProductFullInfoById(productId);
+
+        if (product != null) {
+            // 查询评论列表
+            List<ProductReview> reviewList = productReviewMapper.getReviewsByProductId(productId);
+            product.setReviewList(reviewList);
+
+            // 查询价格对比列表
+            List<ProductPriceComparison> priceComparisonList = productPriceComparisonMapper.getPriceComparisonByProductId(productId);
+            product.setPriceComparisonList(priceComparisonList);
+        }
+
+        return product;
     }
 
     /**
@@ -104,11 +127,11 @@ public class ProductService {
         List<ProductFullInfo> records = new ArrayList<>();
         int total = 0;
         int pages = 0;
-        if (query.getQueryType().equals("1")){
+        if (query.getQueryType().equals("1")) {
             records = productMapper.getTopSellingProducts(query.getSize());
             total = query.getSize();
             pages = 1;
-        }else {
+        } else {
             records = productMapper.queryProducts(query);
             total = productMapper.countProducts(query);
             // 计算总页数

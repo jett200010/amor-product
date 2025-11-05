@@ -3,6 +3,7 @@ package com.example.amorproduct.domain;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * 商品完整信息聚合实体类
@@ -76,4 +77,12 @@ public class ProductFullInfo {
     // ==================== 时间戳 ====================
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
+    // ==================== 评论信息 ====================
+    /** 商品评论列表 */
+    private List<ProductReview> reviewList;
+
+    // ==================== 价格对比信息 ====================
+    /** 价格对比列表（多平台） */
+    private List<ProductPriceComparison> priceComparisonList;
 }
