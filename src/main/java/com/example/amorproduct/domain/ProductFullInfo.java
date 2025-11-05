@@ -78,6 +78,16 @@ public class ProductFullInfo {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    // ==================== 商品详细信息 ====================
+    /** 主要成分信息 */
+    private String mainIngredients;
+
+    /** 健康益处信息 */
+    private String healthBenefits;
+
+    /** 适合老年人的功能信息 */
+    private String suitableForElderly;
+
     // ==================== 评论信息 ====================
     /** 商品评论列表 */
     private List<ProductReview> reviewList;

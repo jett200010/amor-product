@@ -107,6 +107,24 @@ public class ProductBasicInfo {
     private String quickBuyUrl;
 
     /**
+     * 主要成分信息（JSON格式）
+     * 示例：["EPA (1200毫克)", "DHA (800毫克)", "维生素E", "天然柠檬味"]
+     */
+    private String mainIngredients;
+
+    /**
+     * 健康益处信息（JSON格式）
+     * 示例：["有益心脏健康", "促进大脑功能", "减轻关节炎症", "改善胆固醇水平"]
+     */
+    private String healthBenefits;
+
+    /**
+     * 适合老年人的功能信息（JSON格式）
+     * 示例：["易于吞咽的软胶囊", "标签大而清晰，便于阅读", "经第三方检测纯度", "没有鱼腥味", "推荐剂量已明确标示"]
+     */
+    private String suitableForElderly;
+
+    /**
      * 创建时间
      * 记录数据首次插入时间
      */

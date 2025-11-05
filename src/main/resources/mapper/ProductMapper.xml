@@ -57,6 +57,10 @@
         <!-- 时间戳 -->
         <result column="created_at" property="createdAt"/>
         <result column="updated_at" property="updatedAt"/>
+        <!-- 商品详细信息 -->
+        <result column="main_ingredients" property="mainIngredients"/>
+        <result column="health_benefits" property="healthBenefits"/>
+        <result column="suitable_for_elderly" property="suitableForElderly"/>
     </resultMap>
 
     <!-- 结果映射 - 商品列表VO -->
@@ -150,7 +154,7 @@
         pbi.id, pbi.product_id, pbi.parent_product_id, pbi.title, pbi.brand,
         pbi.seller_id, pbi.seller_name, pbi.platform, pbi.product_url, pbi.status,
         pbi.main_image_url, pbi.image_urls, pbi.product_description, pbi.selling_points,
-        pbi.specifications, pbi.quick_buy_url,
+        pbi.specifications, pbi.quick_buy_url, pbi.main_ingredients, pbi.health_benefits, pbi.suitable_for_elderly,
         pp.current_price, pp.original_price, pp.currency, pp.discount_percentage,
         pp.discount_amount, pp.unit_price,
         prr.rating, prr.reviews_count, prr.answered_questions, prr.best_sellers_rank,
@@ -323,6 +327,7 @@
             p.seller_id, p.seller_name, p.platform, p.product_url, p.status,
             p.main_image_url, p.image_urls,
             p.product_description, p.selling_points, p.specifications, p.quick_buy_url,
+            p.main_ingredients, p.health_benefits, p.suitable_for_elderly,
             pr.current_price, pr.original_price, pr.currency, pr.discount_percentage,
             pr.discount_amount, pr.unit_price,
             rv.rating, rv.reviews_count, rv.answered_questions, rv.best_sellers_rank, rv.category_rank,
